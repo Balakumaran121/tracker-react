@@ -1,4 +1,6 @@
-import Login from "./pages/Login";
+// eslint-disable-next-line no-unused-vars
+import React from "react";
+import Login from "@/pages/Login";
 import Signup from "./pages/Signup";
 
 const App = () => {
