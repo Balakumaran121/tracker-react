@@ -1,0 +1,48 @@
+.page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cover{
+    background-color: gray;
+    height: 35em;
+    width: 30em;
+    position: relative;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgb(10, 156, 156);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.signup-btn{
+    
+    margin-top: 40px;
+    width: 40%;
+    height: 3em;
+    background-color: rgb(19, 76, 99);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.text{
+    left: 6em;
+    margin-top: -35px;
+    position: relative;
+    bottom: 7em;
+    
+}
+input{
+    border: none;
+    background-color: rgb(299, 267, 268);
+    height: 4em;
+    width: 80%;
+    border-radius: 0.25em;
+    text-align: center;
+}
+input:focus{
+    outline-color: black;
+}

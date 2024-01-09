@@ -1,6 +1,11 @@
+import AuthLogin from "../components/login/AuthLogin"
+
+
 const Login = () => {
   return (
-    <div>Login</div>
+    <>
+    <AuthLogin/>
+    </>
   )
 }
 
