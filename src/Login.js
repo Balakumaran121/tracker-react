@@ -17,6 +17,7 @@ const Login = () => {
                 <div className="alt-login">
                     <div className="facebook"></div>
                     <div className="google"></div>
+                    <div>AMds</div>
                 </div>
                 
             </div>
