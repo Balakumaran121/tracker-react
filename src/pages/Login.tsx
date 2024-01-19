@@ -1,6 +1,10 @@
 const Login = () => {
   return (
-    <div>Login</div>
+    <div className="bg-black text-white">
+      <h1 >Heelo</h1>
+      
+      Login
+      </div>
   )
 }
 
