@@ -6,7 +6,7 @@ const Home = () => {
       <nav>
         <h1>Todo Tracker</h1>
         <ul>
-          <li>Login</li>
+          <li>Logins</li>
           <li>Register</li>
         </ul>
       </nav>
