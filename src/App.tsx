@@ -1,6 +1,8 @@
+import MainRoutes from "./routes"
+
 const App = () => {
   return (
-    <div>App</div>
+    <MainRoutes/>
   )
 }
 
