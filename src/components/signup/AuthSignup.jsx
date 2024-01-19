@@ -1,7 +1,8 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
-import "./Signup.css";
+import "./AuthSignup.css";
 
-const Signup=()=>{
+const AuthSignup=()=>{
     return(
         <div className="cover">
            <h1>SignUp Form</h1>
@@ -14,4 +15,4 @@ const Signup=()=>{
         </div>
     )
 }
-export default Signup;
+export default AuthSignup;
