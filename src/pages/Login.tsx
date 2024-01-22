@@ -1,9 +1,20 @@
 const Login = () => {
   return (
-    <div className="bg-black text-white">
-      <h1 >Heelo</h1>
-      
-      Login
+    <div className="flex justify-center">
+      <div className="w-auto min-h-96 bg-slate-200 mt-24 p-10">
+        <div className=" text-2xl font-bold flex justify-center -mb-4">
+          Login Form
+        </div>
+        <div className="pt-20 pb-8 flex flex-col">
+          <input className="w-60 h-10 -mt-10 mb-2 rounded-md border-2 border-black" type="email" placeholder="enter the email" />
+          <input className="w-60 h-10 mb-2 rounded-md border-2 border-black" type="password" placeholder="Enter the Password" />
+          
+        </div>
+        <div className="flex justify-center">
+          <button type="submit" className="w-24 h-8 bg-purple-700 hover:bg-black text-white rounded-md border-2 border-black">Login</button>
+        </div>
+        <div><p className=" font-medium text-slate-600 mt-4">Dont have account?<a href="#"className="font-medium text-purple-600 hover:underline"> SignIn </a>here</p></div>
+      </div>
       </div>
   )
 }
