@@ -8,6 +8,7 @@ const Home = () => {
         <ul>
           <li>Logins</li>
           <li>Register</li>
+          <li>Table</li>
         </ul>
       </nav>
     </div>
