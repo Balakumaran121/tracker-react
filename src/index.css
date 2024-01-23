@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+
+    .nav{
+        @apply  bg-slate-400 text-white;
+    }
+    .welcomeflex{
+        @apply inline-block p-5 pl-3 font-serif;
+    }
+    .navleft{
+        @apply inline-block ml-[70%] font-serif;
+    }
+
+    .inline{
+        @apply inline-block pr-4 ;
+    }
+    .centerword{
+        @apply  flex justify-center ;
+    }
+    .h2word{
+        @apply mt-60 font-serif font-semibold text-xl;
+    }
+}
