@@ -3,13 +3,17 @@ import React from "react";
 const Home = () => {
   return (
     <div>
-      <nav>
-        <h1>Todo Tracker</h1>
-        <ul>
-          <li>Logins</li>
-          <li>Register</li>
+      <nav className="nav">
+        <h1 className="welcomeflex ">Welcome</h1>
+        <ul className="navleft">
+          <li className="inline"><a href="Login">Login |</a></li>
+          <li className="inline"><a href="Register">Register |</a></li>
+          <li className="inline"><a href="Table">Todo-Table</a></li>
         </ul>
       </nav>
+      <div className="centerword">
+          <h2 className="h2word">Welcome to the page </h2>
+      </div>
     </div>
   );
 };
