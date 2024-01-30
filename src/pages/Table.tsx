@@ -1,12 +1,14 @@
 const Table =()=>{
     return(
-        <div className=" mt-10 ml-5">
-            <h3 className="font-medium">ToDo List</h3>
-            <div className="mt-5 ml-8">
-            <input className="border-2 border-black w-64"type="text" placeholder="New Task"/>
-            <button className="bg-purple-700 text-white ml-5 text-sm hover:bg-gray-600">Add Task</button>
+        <div className=" flex items-center justify-center bg-orange-100 h-screen   ">
+            <div className=" w-2/5 h-80 m-8 p-5 bg-gray-100 rounded-lg shadow-md">
+        <div className="  mt-10 ml-5">
+            <h3 className="font-medium text-2xl  flex justify-start">ToDo List</h3>
+            <div className="mt-5 ml-8  flex justify-center">
+            <input className="border-2 border-black w-56  "type="text" placeholder="Search"/>
+            <button className="bg-purple-700 py-2 px-3 text-white ml-5 text-sm rounded-lg hover:bg-gray-600">Add Task</button>
             </div>
-            <table className="mt-5">
+            <table className="mt-5  flex justify-center">
                 <thead>
                     
                     <tr>
@@ -38,6 +40,8 @@ const Table =()=>{
             </table>
             
 
+        </div>
+        </div>
         </div>
     )
 }
