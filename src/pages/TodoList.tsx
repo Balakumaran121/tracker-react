@@ -1,39 +1,68 @@
-import { useState } from "react";
+import React, { useState}from "react";
+
 
 const TodoList =()=>{
-    const [list]=useState([
-        {
-            id:1,
-            todo:"Hi Bk Good Morning",
-        },
-        {
-            id:2,
-            todo:"Hi Sulai Good Morning",
-        },
-        {
-            id:3,
-            todo:"Hi HU Good Morning",
-        },
-    ]);
-    return(
-        <div className="h-screen  bg-gray-100">
-            <section id="title" className="flex justify-center">
-                <h1 className="text-3xl font-semibold">Todo Tracker</h1>
-            </section>
-        <section id="search" className="flex justify-center p-10">
-                <input className="w-54 h-10  border-gray-300 focus:outline-none focus:border-pink-600 rounded-md text-2xl mx-2 py-2 px-2"/>
-                <button className="bg-pink-500 text-white px-2 py-2 rounded-md">Add Todo</button>
-        </section>
-        <section id="list" className="flex justify-center">
-            <ul className="text-2xl">
-                {list.map((todo,index)=>(
 
-                <li key={index}><input type="checkbox" />{todo.todo}</li>
-                ))}
-               
-            </ul>
-        </section>
+    const [todos,setTodos] = useState([]);
+    const [newTodo, setNewTodo]=useState("");
+
+
+    const handleAddTodo =()=>{
+        if(newTodo.trim() !==""){
+            setTodos([...todos, {text: newTodo.trim(),checked:false}])
+            setNewTodo("");
+        }
+    };
+
+    const handleDeleteTodo = (index)=>{
+        const newTodos = [...todos];
+        newTodos.splice(index,1);
+        setTodos(newTodos);
+
+    }
+    const handleToggleTodo =(index)=>{
+        const newTodos = [...todos];
+        newTodos[index].checked=! newTodos[index].checked;
+        setTodos(newTodos)
+    };
+    return (
+        <div className=" h-screen flex items-center justify-center bg-gray-200  ">
+            <div className="w-full max-w-md m-8 p-8 bg-white rounded-lg shadow-md">
+            <section className="flex justify-center"> 
+                <h1 className="text-3xl font-extrabold mb-10">Todo-List</h1>
+                </section>
+            <section className="flex justify-center ">
+            <input className="bg-white" placeholder="Enter Today Task" type="text" value={newTodo} onChange={(e)=> setNewTodo(e.target.value)}/>
+            <button  className="bg-pink-500 text-white px-2 py-2 ml-5 rounded-md"onClick={handleAddTodo}>Add</button>
+            </section>
+            <section> 
+            <ul>
+            {todos.map((todo, index)=>(
+
+                <li key={index} style={{display:"flex"}}>
+                    <div style={{display:"flex",alignItems:"center"}}>
+                    <input type="checkbox" 
+                    checked={todo.checked} 
+                    onChange={()=>handleToggleTodo(index)}
+                    />
+
+                    <span  className="ml-2 font-mono"
+                     style={{textDecoration: todo.checked ? "line-through" : "none",}}>
+                        {todo.text }
+                    </span>
+                    <button  className="  bg-pink-500 rounded-md text-white px-2 py-2 shadow-md ml-5"style={{margin:"5px"}}onClick={()=> handleDeleteTodo(index)}>Delete
+
+                    </button>
+                    </div>
+                    
+                </li>
+            ))}
+           </ul>
+            </section>
+           
+           
+            </div>
         </div>
-    )   
+    )
 }
-export default TodoList
+export default TodoList;

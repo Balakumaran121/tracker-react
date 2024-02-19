@@ -12,7 +12,7 @@ const Header = () => {
           <Link to="/Register"> Register</Link> |{" "}
         </li>
         <li className="inline">
-          <Link to="/table"> Todo-Table</Link>{" "}
+          <Link to="/todolist"> TodoList</Link>{" "}
         </li>
       </ul>
     </nav>
