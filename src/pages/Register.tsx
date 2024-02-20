@@ -42,7 +42,7 @@ const Register = () => {
           <input
             type="email"
             id="email"
-            className="w-full border-b-2 border-gray-300 py-2 px-3 text-lg rounded-md focus:outline-none focus:border-pink-500"
+            className="w-full border-b-2 border-gray-300 py-2 px-3 text-lg rounded-md focus:outline-none focus:border-indigo-500"
             placeholder="Enter your email"
             value={email}
             onChange={handleEmailChange}
@@ -59,7 +59,7 @@ const Register = () => {
           <input
             type="password"
             id="password"
-            className="w-full border-b-2 border-gray-300 py-2 px-3 text-lg rounded-md focus:outline-none focus:border-pink-500"
+            className="w-full border-b-2 border-gray-300 py-2 px-3 text-lg rounded-md focus:outline-none focus:border-indigo-500"
             placeholder="Enter your password"
             value={password}
             onChange={handlePasswordChange}
@@ -76,7 +76,7 @@ const Register = () => {
           <input
             type="password"
             id="confirmpassword"
-            className="w-full border-b-2 border-gray-300 py-2 px-3 text-lg rounded-md focus:outline-none focus:border-pink-500"
+            className="w-full border-b-2 border-gray-300 py-2 px-3 text-lg rounded-md focus:outline-none focus:border-indigo-500"
             placeholder="Enter your confirm password"
             value={confirmpassword}
             onChange={handleConfirmPassword}
@@ -86,14 +86,14 @@ const Register = () => {
         <div className="text-center mt-10 ">
           <button
             type="submit"
-            className="bg-pink-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-pink-600 focus:outline-none focus:bg-pink-600"
+            className="bg-indigo-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600"
           >
             Register
           </button>
         </div>
       </form>
     </div>
-  );
+  )
 };
 
 export default Register;

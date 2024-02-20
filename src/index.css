@@ -4,23 +4,20 @@
 
 @layer components{
 
-    .nav{
-        @apply  bg-slate-400 text-white;
+    .nav-element{
+        @apply  bg-indigo-500 text-white;
     }
-    .welcomeflex{
+    .welcome-text{
         @apply inline-block p-5 pl-3 font-serif;
     }
-    .navleft{
+    .nav-items{
         @apply inline-block ml-[70%] font-serif;
     }
 
     .inline{
         @apply inline-block pr-4 ;
     }
-    .centerword{
-        @apply  flex justify-center ;
-    }
-    .h2word{
-        @apply mt-60 font-serif font-semibold text-xl;
+    .center-element{
+        @apply  flex justify-center items-center h-screen;
     }
 }
