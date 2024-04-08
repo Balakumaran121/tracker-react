@@ -3,21 +3,13 @@
 @tailwind utilities;
 
 @layer components{
-
-    .nav-element{
-        @apply  bg-indigo-500 text-white;
-    }
-    .welcome-text{
-        @apply inline-block p-5 pl-3 font-serif;
-    }
-    .nav-items{
-        @apply inline-block ml-[70%] font-serif;
-    }
-
-    .inline{
-        @apply inline-block pr-4 ;
-    }
-    .center-element{
-        @apply  flex justify-center items-center h-screen;
-    }
+  .icon__wrapper{
+    @apply border border-gray-400 rounded-full w-[50px] h-[50px] grid place-items-center text-[22px]
+  }
+  .feature_btn{
+    @apply bg-accent text-white px-4 py-1 rounded-full
+  }
+  .bg_hover{
+    @apply border border-none hover:bg-teal-500 hover:text-white hover:scale-105 transition-transform rounded-lg
+  }
 }
